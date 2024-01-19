@@ -15,7 +15,7 @@ class NeuralNetwork:
         # Input to Hidden Weights
         self.w_i_h = np.random.default_rng().normal(0, pow(self.input_nodes, -0.5),(self.hidden_nodes[0], self.input_nodes))
         # Hidden to Hidden Weights
-        if len(self.hidden_nodes) > 1: # If there is mare than one hidden layer
+        if len(self.hidden_nodes) > 1: # If there is more than one hidden layer
             self.PrevHL = self.hidden_nodes[0]
             del self.hidden_nodes[0]
             for i in self.hidden_nodes:
